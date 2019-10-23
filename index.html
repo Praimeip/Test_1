@@ -41,7 +41,7 @@
 		<div class="price">10 000 ₽</div>
 		<!--- МЕНЮ --->
 		<div class="menu">
-			<div id="catalogue" onclick="Catalogue()">
+			<div id="catalogue" >
 				<img class="stroke" src="image/Stroke.png">
 				<div class="text_catalogue"> Каталог товаров</div> 
 			</div>
@@ -176,35 +176,12 @@
 		</div>
 </body>
 <script type="text/javascript">
-	function Catalogue() // открытие/закрытие меню каталога товара
+	function Contextual_menu() // открытие/закрыктие дополнительного меню коталога товаров
 	{
 		if (document.getElementById('contextual_menu_delivery').style.visibility == 'visible')
 		{
 			document.getElementById('contextual_menu_delivery').style.visibility = 'hidden';
 		}
-		if (document.getElementById('contextual_menu').style.visibility == 'visible')
-		{
-			document.getElementById('contextual_menu').style.visibility = 'hidden';
-			for (var i = 1; i <= 9; i++)
-			{
-				if (document.getElementById('d_menu_'+ i).style.visibility != "")
-				{
-					document.getElementById('d_menu_'+ i).style.visibility = 'hidden';	
-				}				
-			}
-			for (var i = 1; i <= 7; i++)
-			{
-				document.getElementById('menu_'+ i).style.visibility = 'hidden';
-			}
-		}
-		else
-		{
-			document.getElementById('contextual_menu').style.visibility = 'visible';
-		}
-
-	}
-	function Contextual_menu() // открытие/закрыктие дополнительного меню коталога товаров
-	{
 		var id = event.target.id;
 		id = id.substr(11);
 		id_dop = "d_" + id;
@@ -227,9 +204,8 @@
 	}	
 	function Delivery_menu() // открытие/закрыктие меню доставки и оплаты
 	{
-		if (document.getElementById('contextual_menu').style.visibility == 'visible')
-		{
-			document.getElementById('contextual_menu').style.visibility = 'hidden';
+
+
 			for (var i = 1; i <= 9; i++)
 			{
 				if (document.getElementById('d_menu_'+ i).style.visibility != "")
@@ -241,7 +217,7 @@
 			{
 				document.getElementById('menu_'+ i).style.visibility = 'hidden';
 			}
-		}
+		
 		if (document.getElementById('contextual_menu_delivery').style.visibility == 'visible')
 		{
 			document.getElementById('contextual_menu_delivery').style.visibility = 'hidden';
