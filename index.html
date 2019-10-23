@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="plash"> 
+	<div  class="frame"><img class="vector" src="image/Vector.png"></div>
+	<div class="city">
+		<div  class="name_city">Ваш город: Москва</div>
+		<div class="menu_city"><img class="arrow" src="image/Arrow.png"></div>
+	</div>
+	<div class="adress">
+		<b>Адрес магазина:</b> &nbsp;г. Москва, Варшавское ш, д.68 к.3 
+		<div class="chart"><b>График работы: </b> с 9:00 до 21:00 без выходных</div>
+	</div>
+	<div class="profile"><img class="input" src="image/input.png"></div>
+	<div class="account"><a class="acc" onclick="login_open()">Личный кабинет</a></div>
+	<div class="D3"></div>
+	<div class="logo">
+		<img class="img_logo" src="image/logo.png">
+	</div>
+	<div class="slog">Простой слоган состоящий из шести слов</div>
+	<img class="img_phone" src="image/phone.png">
+	<div class="number">+7 (495) 677-17-79</div>
+	<div class="order_call"><a class="acc">Заказать звонок</a></div>
+	<div class="search">
+		<input class="search1" type="text" placeholder="Поиск по сайту">
+		<img class="magnf" src="image/search.png">
+	</div>
+	<img class="basket" src="image/basket.png">
+	<div class="count">
+		<img class="ellipse" src="image/Ellipse.png">
+		<div class="value_count">10</div>
+	</div>
+	<div class="price">10 000 ₽</div>
+	<div class="menu">
+		<div class="catalogue" onclick="Scr()">
+		<img class="stroke" src="image/Stroke.png">
+		<div class="text_catalogue"> Каталог товаров</div> 
+		</div>
+		<div class="company">О компании</div>
+		<div class="news">Новости</div>
+		<div class="cooperation">Сотрудничество</div>
+		<div class="delivery">Доставка и оплата</div>
+		<div class="reviews">Обзоры</div>
+		<div class="contacts">Контакты</div>
+		<div class="menu_item">Пункт меню</div>
+		<div class="etc"><img src="image/dop_menu.png"></div>
+	</div>
+	<div class="contextual_menu" id="contextual_menu">
+		<div id="contextual_menu_1" onclick="Scr1()">
+			<img class="rectangle" src="image/Rectangle.png">
+			Колоса, колесные опоры
+		</div>
+		<div id="contextual_menu_2" onclick="Scr1()">
+			<img class="rectangle" src="image/Rectangle.png">
+			Складская техника
+		</div>
+		<div id="contextual_menu_3" onclick="Scr1()">
+			<img class="rectangle" src="image/Rectangle.png">
+			Металлические поддоны
+		</div>
+		<div id="contextual_menu_4" onclick="Scr1()">
+			<img class="rectangle" src="image/Rectangle.png">
+			Ограждения для поддонов
+		</div>
+		<div id="contextual_menu_5" onclick="Scr1()">
+			<img class="rectangle" src="image/Rectangle.png">
+			Стеллажи и тележки для воды
+		</div>
+		<div id="contextual_menu_6" onclick="Scr1()">
+			<img class="rectangle" src="image/Rectangle.png">
+			Сетчатые контейнеры шкафы
+		</div>
+		<div id="contextual_menu_7" onclick="Scr1()">
+			<img class="rectangle" src="image/Rectangle.png">
+			Верстаки
+		</div>
+		<div id="contextual_menu_8" onclick="Scr1()">
+			<img class="rectangle" src="image/Rectangle.png">
+			Металлические стеллажи
+		</div>
+		<div id="contextual_menu_9" onclick="Scr1()">
+			<img class="rectangle" src="image/Rectangle.png">
+			Металл шкафы для документов
+		</div>
+		<div id="contextual_menu_10" onclick="Scr1()">
+			<img class="rectangle" src="image/Rectangle.png">
+			Металл шкафы для одежды
+		</div>
+	</div>
+	<div class="dop_menu">
+		<div id="menu_1" >Колоса, колесные опоры</div>
+		<div id="menu_2">Складская техника</div>
+		<div id="menu_3">Металлические поддоны</div>
+		<div id="menu_4">Ограждения для поддонов</div>
+		<div id="menu_5">Стеллажи и тележки для воды</div>
+		<div id="menu_6">Сетчатые контейнеры шкафы</div>
+		<div id="menu_7">Верстаки</div>
+	</div>	
+	<div class="dop_menu_1">
+		<div id="d_menu_1">Колоса, колесные опоры</div>
+		<div id="d_menu_2">Складская техника</div>
+		<div id="d_menu_3">Металлические поддоны</div>
+		<div id="d_menu_4">Ограждения для поддонов</div>
+		<div id="d_menu_5">Стеллажи и тележки для воды</div>
+		<div id="d_menu_6">Сетчатые контейнеры шкафы</div>
+		<div id="d_menu_7">Верстаки</div>
+		<div id="d_menu_8">Металлические стеллажи</div>
+		<div id="d_menu_9">Металл шкафы для документов</div>
+	</div>	
+</header>
+<div id="registration">
+		<div id="button_login" onclick="Login()">Авторизация</div>
+		<div id="button_regist">Регистрация</div>
+		<img class="dagger" onclick="close_registration()" src="image/dagger.png">
+		<div class="email">E-Mail адрес <div id="star_email">*</div></div>
+		<input class="input_email" type="email" name="">
+		<div class="pass">Пароль <div id="star_pass">*</div></div>
+		<input class="input_pass" type="text" name="">
+		<img class="eyes" src="image/eyes.png">
+		<div class="repeat_pass">Введите пароль еще раз <div id="star_repeat_pass">*</div></div>
+		<input class="repeat_input_pass" type="text" name="">
+		<img class="open_eyes" src="image/open_eyes.png">
+		<img class="rectangle_regist" src="image/Rectangle1.png">
+		<img id="tick_regist" src="image/tick.png">
+		<div class="agree_regist">Я ознакомился с <a href="#" class="link">соглашением сервиса</a> и согласен с условиями пре­до­ста­вле­ния услуг</div>
+		<input class="submit_regist" type="submit"  name="" value="Зарегистрироваться">
+	</div>
+	<div id="login">
+		<div id="button_login_login">Авторизация</div>
+		<div id="button_regist_login" onclick="Regist()">Регистрация</div>
+		<img class="dagger" onclick="login_close()" src="image/dagger.png">
+		<div class="email">E-Mail адрес <div id="star_email">*</div></div>
+		<input class="input_email" type="email" name="">
+		<div class="pass">Пароль <div id="star_pass">*</div></div>
+		<input class="input_pass" type="text" name="">
+		<img class="eyes" src="image/eyes.png">
+		<img class="rectangle_login" src="image/Rectangle1.png">
+		<img id="tick_login" src="image/tick.png">
+		<div class="memorize">Запомнить меня</div>
+		<div class="agree_login"> Вход в личный кабинет на сайте подразумевает обязательное согласие с <a href="/" class="link">политикой конфиденциальности</a></div>
+		<input class="submit_login" type="submit"  name="" value="Войти">
+		<div class="social_network_text">Вход через социальные сети:</div>
+		<div class="social_network">
+		<div class="google">
+			<img class="google_logo" src="image/google.png">
+			<div class="google_name">Google</div>
+		</div>
+		<div class="vk">
+			<img class="vk_logo" src="image/vk.png">
+			<div class="vk_name">Вконтакте</div>
+		</div>
+		<div class="facebook">
+			<img class="facebook_logo" src="image/facebook.png">
+			<div class="fdacebook_name">Facebook</div>
+		</div>
+		</div>
+		
+
+	</div>
+</body>
+<script type="text/javascript">
+	function Scr()
+	{
+
+		if (document.getElementById('contextual_menu').style.visibility == 'visible')
+		{
+			document.getElementById('contextual_menu').style.visibility = 'hidden';
+			for (var i = 1; i <= 9; i++)
+			{
+				if (document.getElementById('d_menu_'+ i).style.visibility != "")
+				{
+					document.getElementById('d_menu_'+ i).style.visibility = 'hidden';	
+				}				
+			}
+			for (var i = 1; i <= 7; i++)
+			{
+				document.getElementById('menu_'+ i).style.visibility = 'hidden';
+			}
+		}
+		else
+		{
+			document.getElementById('contextual_menu').style.visibility = 'visible';
+		}
+
+	}
+	function Scr1()
+	{
+		var id = event.target.id;
+		id = id.substr(11);
+		id_dop = "d_" + id;
+		if (document.getElementById(id_dop).style.visibility == 'visible')
+		{
+			document.getElementById(id_dop).style.visibility = 'hidden';
+		}
+		else
+		{
+			document.getElementById(id_dop).style.visibility = 'visible';
+		}
+		if (document.getElementById(id).style.visibility == 'visible')
+		{
+			document.getElementById(id).style.visibility = 'hidden';
+		}
+		else
+		{
+			document.getElementById(id).style.visibility = 'visible';
+		}
+	}	
+	function login_open()
+	{
+		document.getElementById('login').style.visibility = 'visible';
+	}	
+	function login_close()
+	{
+		document.getElementById('login').style.visibility = 'hidden';
+	}	
+	function close_registration()
+	{
+		document.getElementById('registration').style.visibility = 'hidden';
+	}	
+	function Login()
+	{
+		document.getElementById('registration').style.visibility = 'hidden';
+		document.getElementById('login').style.visibility = 'visible';
+	}
+	function Regist()
+	{
+		document.getElementById('login').style.visibility = 'hidden';
+		document.getElementById('registration').style.visibility = 'visible';
+	}
+</script>
+</html>
